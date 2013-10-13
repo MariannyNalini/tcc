@@ -1,6 +1,8 @@
 body{ background-color: #fffcf4; }
 section { position: relative; }
 
+.wrapper{ margin: 0 auto; width: 770px; }
+
 nav ul li { }
 nav ul li a{ text-indent: -9999px; display: block; }
 nav ul li #about{ background: url("../img/menu-about.png") no-repeat; height: 102px; width: 79px; }
@@ -11,3 +13,6 @@ nav ul li #contact{ background: url("../img/menu-contact.png") no-repeat; height
 
 #home{ background: url("../img/bg-home.png") no-repeat; }
 #about{ background: url("../img/bg-about.png") no-repeat bottom right; }
+
+#about article{ margin-top: 200px; }
+#about article p{ float: left; margin-right: 135px; width: 300px; }
