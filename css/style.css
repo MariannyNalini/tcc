@@ -1,0 +1,4 @@
+body{ background-color: #fffcf4; }
+section { position: relative; }
+
+#home{ background: url("../img/bg-home.png") no-repeat; }
