@@ -1,11 +1,14 @@
 body{ background-color: #fffcf4; }
 section { position: relative; border: solid 1px black; }
 
+h2{ font-family: 'Oswald', sans-serif; font-size: 50px; text-align: center; font-weight: 700; margin-top: 40px; }
+
 .wrapper{ margin: 0 auto; width: 960px; border: }
 
 #home{ }
 #portfolio {  }
 #music-and-theater{ }
+#blog { }
 #about{ }
 #contact{  }
 
@@ -13,10 +16,13 @@ nav.tree{ background: url("../img/bg-home.png") no-repeat; width: 543px; height:
 nav.tree ul li{ background: url("../img/sprite-menus.png"); position: absolute; height: 104px}
 nav.tree ul li#portfolio{ width: 94px; height: 94px; top: 325px; left: 338px; }
 nav.tree ul li#music-and-theater{ background-position: -115px 0; width: 102px; height: 87px; top: 152px; left: 74px; }
-nav.tree ul li#blog { background-position: -257px 0; width: 90px; height: 104px; top: 325px; left: 80px;}
-nav.tree ul li#about { background-position: -370px 0; width: 79px; height: 101px; top: 201px; left: 482px; }
-nav.tree ul li#contact { background-position: -479px 0; width: 79px; height: 78px; top: 30px; left: 256px; }
+nav.tree ul li#blog{ background-position: -257px 0; width: 90px; height: 104px; top: 325px; left: 80px;}
+nav.tree ul li#about{ background-position: -370px 0; width: 79px; height: 101px; top: 201px; left: 482px; }
+nav.tree ul li#contact{ background-position: -479px 0; width: 79px; height: 78px; top: 30px; left: 256px; }
 
-h2{ font-family: 'Oswald', sans-serif; font-size: 50px; text-align: center; font-weight: 700; margin-top: 40px; }
 
 #portfolio h2{ color: #44a7c9; text-shadow: 2px 2px 0px #1790b3; }
+#music-and-theater h2{ color: #883bbb; text-shadow: 2px 2px 0px #622c7b; }
+#blog h2{ color: #ff9d02; text-shadow: 2px 2px 0px #d18000; }
+#about h2{ color: #e50746; text-shadow: 2px 2px 0px #b80135; }
+#contact h2{ color: #54b819; text-shadow: 2px 2px 0px #497400; }
