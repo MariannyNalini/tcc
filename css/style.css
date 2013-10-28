@@ -1,9 +1,9 @@
 body{ background-color: #fffcf4; }
-section, header { position: relative; border: solid 1px black; clear: both; }
+section, header { position: relative; clear: both; }
 
 h2{ font-family: 'Oswald', sans-serif; font-size: 50px; text-align: center; font-weight: 700; margin: 40px 0; }
 
-.wrapper{ margin: 0 auto; width: 960px; border: }
+.wrapper{ margin: 0 auto; width: 960px; }
 
 #home{ }
 #portfolio {  }
@@ -20,8 +20,12 @@ nav.tree ul li#blog{ background-position: -257px 0; width: 90px; height: 104px; 
 nav.tree ul li#about{ background-position: -370px 0; width: 79px; height: 101px; top: 201px; left: 482px; }
 nav.tree ul li#contact{ background-position: -479px 0; width: 79px; height: 78px; top: 30px; left: 256px; }
 
-nav.interna{ background-color: #dfd0bb; height: 60px;}
-nav.interna ul li{ display: inline-block; margin: 0 auto; font-family: 'Oswald', sans-serif; font-size: 8px; color: #a59682; }
+nav.interna{ background-color: #dfd0bb; -webkit-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); -moz-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); }
+nav.interna h2{ float: left; background: url("../img/logo-menu.png") no-repeat; width: 30px; height: 32px; margin: 5px 0 0 5px; padding: 0;}
+nav.interna ul { text-align: center; }
+nav.interna ul li{ display: inline-block; margin: 0 auto; padding: 14px 40px; text-transform: uppercase;}
+nav.interna ul li:first-child{ padding-left: 0;}
+nav.interna ul li a{ font-family: 'Oswald', sans-serif; font-weight: 300; font-size: 14px; color: #a59682; text-decoration: none; }
 
 #portfolio h2{ color: #44a7c9; text-shadow: 2px 2px 0px #1790b3; }
 #music-and-theater h2{ color: #883bbb; text-shadow: 2px 2px 0px #622c7b; }
@@ -33,3 +37,6 @@ nav.interna ul li{ display: inline-block; margin: 0 auto; font-family: 'Oswald',
 #about aside .border{ background: url("../img/border-photo.png") no-repeat; width: 342px; height: 337px; }
 
 #contact h2{ color: #54b819; text-shadow: 2px 2px 0px #497400; }
+
+#footer{ background-color: #dfd0bb; padding: 20px 0;}
+#footer h2{ background: url("../img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0;}
