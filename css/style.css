@@ -1,5 +1,5 @@
 body{ background-color: #fffcf4; }
-section { position: relative; border: solid 1px black; }
+section, header { position: relative; border: solid 1px black; }
 
 h2{ font-family: 'Oswald', sans-serif; font-size: 50px; text-align: center; font-weight: 700; margin-top: 40px; }
 
@@ -24,5 +24,7 @@ nav.tree ul li#contact{ background-position: -479px 0; width: 79px; height: 78px
 #portfolio h2{ color: #44a7c9; text-shadow: 2px 2px 0px #1790b3; }
 #music-and-theater h2{ color: #883bbb; text-shadow: 2px 2px 0px #622c7b; }
 #blog h2{ color: #ff9d02; text-shadow: 2px 2px 0px #d18000; }
+
 #about h2{ color: #e50746; text-shadow: 2px 2px 0px #b80135; }
+#about article{ font-family: 'Armata', sans-serif; color: #967f60; font-size: 12px; line-height: 20px; width: 425px; text-align: justify;}
 #contact h2{ color: #54b819; text-shadow: 2px 2px 0px #497400; }
