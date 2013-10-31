@@ -10,15 +10,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/jquery.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/jquery.hoverdir.js"></script>
+        <script src="js/modernizr.custom.97074.js"></script>
 
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/hover.css">
         <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
     </head>
@@ -66,14 +68,13 @@
         <section id="portfolio">
             <div class="wrapper">
                 <h2 class="title">PORTFOLIO</h2>
-                <ul class="grid">
-
+                <ul id="da-thumbs "class="grid da-thumbs">
+                    
                     <li>
-                        <img src="http://cdn.grumpycats.com/wp-content/uploads/2012/11/Nov-17v3.jpg"/>
-                        <span class="caption scale-caption">
-                            <h3>Free Style Caption</h3>
-                            <p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        </span>
+                        <a href="http://dribbble.com/shots/505046-Menu">
+                            <img src="http://cdn.grumpycats.com/wp-content/uploads/2012/11/Nov-17v3.jpg" />
+                            <div><span>Menu by Simon Jensen</span></div>
+                        </a>
                     </li>
                     <li></li>
                     <li></li>
@@ -109,6 +110,12 @@
         <section id="blog">
             <div class="wrapper">
                 <h2 class="title">BLOG</h2>
+                <ul class="grid">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>                   
+                </ul>
                 <div class="clearfix"></div>
                 <a href="#" class="btn">VER TODOS</a>
             </div>
@@ -116,8 +123,10 @@
 
         <section id="about">
             <div class="wrapper">
-                <h2>SOBRE</h2>
-                <article>Sou feita de muitos Gogues, Tanakas, Elises e Bethânias.<br>
+                <h2 class="title">SOBRE</h2>
+                <article>
+                <h3>Márcia Okida por Márcia Okida</h3>
+                Sou feita de muitos Gogues, Tanakas, Elises e Bethânias.<br>
                 Mais uma grande mistura de Bandeira, Pessoa, Quintana e Vinicius.<br>
                 Lucinda, Tom e Piazolla.<br>
                 Sem esquecer de Chico.<br>
@@ -147,7 +156,15 @@
                 A Paz.<br>
                 E de continuar a fazer Okidas e de criar Márcias.</article>
                 <aside>
-                
+                    <div class="photo">
+                        <span class="border"></span>
+                        <img src="img/okida.png">
+                        <ul>
+                            <li><a href="#">PERFIL</a></li>
+                            <li><a href="#">CURRICULO LATTES</a></li>
+                            <li><a href="#">NA MÍDIA</a></li>
+                        </ul>
+                    </div>
                 </aside>
             </div>
         </section>
