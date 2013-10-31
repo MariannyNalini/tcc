@@ -1,11 +1,9 @@
+// FUNÇÕES GERAIS DA APLICAÇÃO, QUE SERAM USADAS EM TODAS AS TELAS
+
 var Main = (function() {
   return {
     init: function() {
-      this.grid_hovers()
-    },
-
-    grid_hovers: function(){
-      $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+      console.log('init app') 
     }
   }
 })();
