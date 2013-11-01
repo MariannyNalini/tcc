@@ -17,7 +17,7 @@ nav.tree ul li#contact{ background-position: -479px 0; width: 79px; height: 78px
 #blog a.btn { background-color: #ff9d02; text-shadow: 2px 2px 0px #b87100; -webkit-box-shadow: 3px 3px 0px #d18000; -moz-box-shadow: 3px 3px 0px #d18000; box-shadow: 3px 3px 0px #d18000; }
 #blog a.btn:hover{ background-color: #ffb239; }
 
-#about article{ font-family: 'Armata', sans-serif; color: #967f60; font-size: 13px; line-height: 20px; width: 425px; text-align: justify; float: left;}
+#about article{ color: #967f60; font-size: 13px; line-height: 20px; width: 425px; text-align: justify; float: left;}
 #about article h3{ color: #e50746; }
 #about aside { float: right; margin: 43px 0 0 0; background: url("/img/bg-espiral.png") no-repeat 4px 210px; height: 600px; width: 365px; }
 #about aside .photo{ position: relative; }

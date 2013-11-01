@@ -1,4 +1,4 @@
-body{ background-color: #fffcf4; }
+body{ font-family: 'Armata', sans-serif; background-color: #fffcf4; font-size: 12px; line-height: 20px }
 section, header { position: relative; clear: both; }
 h2 { font-family: 'Oswald', sans-serif; }
 h2.title{ font-size: 50px; text-align: center; font-weight: 700; margin: 70px 0; }
