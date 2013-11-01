@@ -9,7 +9,7 @@ a{ font-family: 'Oswald', sans-serif; text-decoration: none; }
 
 input[type=text], textarea{ background: transparent; }
 
-.wrapper{ margin: 0 auto; width: 960px; }
+.wrapper{ margin: 0 auto; width: 960px; position:relative; }
 .clearfix{ clear: both; }
 a.btn{ 
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -31,6 +31,8 @@ a.btn{
 
 
 /* ***** MENUS ***** */
+span.tree-cont{ height:666px; background: url("/img/bg-home-cont.png") no-repeat top right; position:absolute; top:0; }
+
 nav.tree{ background: url("/img/bg-home.png") no-repeat; width: 543px; height: 666px; position: relative; }
 nav.tree ul li{ background: url("/img/sprite-menus.png"); position: absolute; height: 104px}
 nav.tree ul li#portfolio{ width: 94px; height: 94px; top: 325px; left: 338px; }
