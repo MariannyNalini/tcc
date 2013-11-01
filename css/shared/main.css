@@ -100,6 +100,9 @@ nav.interna ul li a.contact:hover{ border-color: #54c710; color: #54c710;}
   position: relative;
 }
 
+.interna ul.post{ width: 718px; float: left;}
+.interna ul.post li{ width: 718px; margin: 0 0 20px 0; }
+
 .interna ul.grid{ width: 718px; float: left;  }
 .interna aside{ float: left; margin-left: 22px; width: 220px; }
 .interna aside h2{ text-shadow: none !important; text-align: center; font-size: 25px; margin: 0 0 30px 0; }
@@ -119,3 +122,7 @@ nav.interna ul li a.contact:hover{ border-color: #54c710; color: #54c710;}
 .blog aside ul li a:hover, .blog aside ul li a:active{ background-color: #ff8d02; color: #FFF; }
 .blog aside input[type=text]{ border: solid 1px #ff8d02; color: #ff8d02; }
 
+.post li .post-image{ width: 718px; height: 200px; overflow: hidden; margin: 20px 0;}
+.post li h2{ text-shadow: none !important; color: #a59682 !important; margin-bottom: 10px; font-size: 20px; }
+.post li p{ text-align: justify; margin-bottom: 20px; }
+.post li hr{ margin-top: 20px; }
