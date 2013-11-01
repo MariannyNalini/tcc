@@ -12,7 +12,7 @@ a.btn{
   margin: 15px auto; 
   display: table; 
   color: #FFF; 
-  font-weight: 500; }
+  font-weight: 500;
 }
 
 nav.interna{ background-color: #dfd0bb; -webkit-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); -moz-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); }
