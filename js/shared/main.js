@@ -5,6 +5,7 @@ function Main() {
 
   this.init = function() {
     set_scroll_trigger()
+    animated_grid_hover()
   }
 
   function set_scroll_trigger(){
@@ -20,6 +21,14 @@ function Main() {
 
     if( ( scroll_top - menu.offset().top ) >= 0 )
       menu.addClass('fixed')
+  }
+
+  function animated_grid_hover(){
+    var block = $('.da-thumbs li')
+
+    block.each(function(){
+      $(this).hoverdir();
+    })
   }
 
 }
