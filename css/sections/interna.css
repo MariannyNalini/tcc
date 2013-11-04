@@ -1,4 +1,5 @@
 h2.title{ line-height: 200px; }
+h2.title a{ text-indent: -9999px; display: block; }
 
 ul.post{ width: 718px; float: left;}
 ul.post li{ width: 718px; margin: 0 0 20px 0; }
