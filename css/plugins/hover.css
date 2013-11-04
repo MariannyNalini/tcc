@@ -1,7 +1,7 @@
 .da-thumbs {
   list-style: none;
   position: relative;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 0;
 }
 .da-thumbs li {

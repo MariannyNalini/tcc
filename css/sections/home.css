@@ -1,14 +1,16 @@
-section#portfolio { background: url("/img/bg_portfolio.jpg") no-repeat center; background-size: cover; }
-section#phrase{ background: url("/img/bg_frase.jpg") no-repeat center #ff4445; }
+section{ padding: 10px 0; }
+section h2{ line-height: 200px;}
+section#portfolio { background: url("../../img/bg_portfolio.jpg") no-repeat center; background-size: cover; }
+section#phrase{ background: url("../../img/bg_frase.jpg") no-repeat center #ff4445; }
 section#music-and-theater{ background: url("../../img/bg_musica.jpg") no-repeat center; background-size: cover; }
-section#blog{ background: url("/img/bg_blog.jpg") no-repeat center; background-size: cover; }
-section#contact{ background: url("/img/bg_contato.jpg") no-repeat center; background-size: cover; }
+section#blog{ background: url("../../img/bg_blog.jpg") no-repeat center; background-size: cover; }
+section#contact{ background: url("../../img/bg_contato.jpg") no-repeat center; background-size: cover; }
 
 
-span.tree-cont{ height:666px; background: url("/img/bg-home-cont.png") no-repeat top right; position:absolute; top:0; }
+span.tree-cont{ height:666px; background: url("../../img/bg-home-cont.png") no-repeat top right; position:absolute; top:0; }
 
-nav.tree{ background: url("/img/bg-home.png") no-repeat; width: 543px; height: 666px; position: relative; }
-nav.tree ul li{ background: url("/img/sprite-menus.png"); position: absolute; height: 104px}
+nav.tree{ background: url("../../img/bg-home.png") no-repeat; width: 543px; height: 666px; position: relative; }
+nav.tree ul li{ background: url("../../img/sprite-menus.png"); position: absolute; height: 104px}
 nav.tree ul li#portfolio{ width: 94px; height: 94px; top: 325px; left: 338px; }
 nav.tree ul li#music-and-theater{ background-position: -115px 0; width: 102px; height: 87px; top: 152px; left: 74px; }
 nav.tree ul li#blog{ background-position: -257px 0; width: 90px; height: 104px; top: 325px; left: 80px;}
@@ -20,7 +22,7 @@ nav.tree ul li a span{ display: none; position: absolute; padding: 5px 10px; fon
 nav.tree ul li a:hover span{ display: block }
 
 nav.tree ul li#portfolio a span{ background-color: #44a7c9; left: 90px; top: 25px;}
-nav.tree ul li#music-and-theater a span{ background-color: #883bbb; left: 90px; top: 25px; }
+nav.tree ul li#music-and-theater a span{ background-color: #883bbb; left: 90px; top: 25px; min-width: 92px; }
 nav.tree ul li#blog a span{ background-color: #ff9d02; left: 77px; top: 75px}
 nav.tree ul li#about a span{ background-color: #e50746; left: 77px; top: 68px}
 nav.tree ul li#contact a span{ background-color: #54c710; left: 77px; top: 25px; }
@@ -41,10 +43,10 @@ nav.tree ul li#contact a span{ background-color: #54c710; left: 77px; top: 25px;
 #about article{ color: #967f60; font-size: 13px; line-height: 20px; width: 425px; text-align: justify; float: left;}
 #about article#perfil{ display: none; }
 #about article h3{ color: #e50746; }
-#about aside { float: right; margin: 43px 0 0 0; background: url("/img/bg-espiral.png") no-repeat 4px 210px; height: 600px; width: 365px; }
+#about aside { float: right; margin: 43px 0 0 0; background: url("../../img/bg-espiral.png") no-repeat 4px 210px; height: 600px; width: 365px; }
 #about aside .photo{ position: relative; }
 #about aside .photo img{ display: block; }
-#about aside .photo span.border{ top: -43px; left: -48px; position: absolute; background: url("/img/border-photo.png") no-repeat; width: 342px; height: 337px; }
+#about aside .photo span.border{ top: -43px; left: -48px; position: absolute; background: url("../../img/border-photo.png") no-repeat; width: 342px; height: 337px; }
 #about aside .photo ul{ width: 294px; }
 #about aside .photo ul li{ margin: 10px 0 0 110px; display: inline-block; }
 #about aside .photo ul li:first-child{ margin-left: 0; }
@@ -94,4 +96,17 @@ form a{
 
 form a:hover{
 	background-color: #6cd22f;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #54b819;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #54b819;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #54b819;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #54b819;
 }

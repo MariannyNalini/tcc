@@ -1,7 +1,7 @@
 body{ font-family: 'Armata', sans-serif; background-color: #fffcf4; font-size: 12px; line-height: 20px }
 section, header { position: relative; clear: both; }
 h2 { font-family: 'Oswald', sans-serif; }
-h2.title{ font-size: 50px; text-align: center; font-weight: 700; margin: 70px 0; }
+h2.title{ font-size: 50px; text-align: center; font-weight: 700; }
 a{ font-family: 'Oswald'; text-decoration: none; }
 input[type=text], textarea{ background-color: #fffcf4; }
 
@@ -39,7 +39,7 @@ nav.interna ul li a.contact:hover{ border-color: #54c710; color: #54c710;}
 
 
 #footer{ background-color: #dfd0bb; padding: 20px 0; height:auto;}
-#footer h2{ background: url("/img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0;}
+#footer h2{ background: url("../../img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0;}
 
 
 
