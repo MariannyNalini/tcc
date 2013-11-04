@@ -25,7 +25,6 @@ function Home() {
       left: -(tree_cont_w)
     })
   }
-
 }
 
 $(document).ready(function(){

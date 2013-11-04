@@ -40,11 +40,11 @@
               <span class="tree-cont"></span>
               <nav class="tree">
                   <ul>
-                      <li class="animate tossing" id="portfolio"><a href="#"><span>Portfolio</span></a></li>
-                      <li class="animate tossing" id="music-and-theater"><a href="#"><span>Música e Teatro</span></a></li>
-                      <li class="animate tossing" id="blog"><a href="#"><span>Blog</span></a></li>
-                      <li class="animate tossing" id="about"><a href="#"><span>Sobre</span></a></li>
-                      <li class="animate tossing" id="contact"><a href="#"><span>Contato</span></a></li>
+                      <li class="animate tossing" id="portfolio"><a href="#section-portfolio"><span>Portfolio</span></a></li>
+                      <li class="animate tossing" id="music-and-theater"><a href="#section-musicandtheater"><span>Música e Teatro</span></a></li>
+                      <li class="animate tossing" id="blog"><a href="#section-blog"><span>Blog</span></a></li>
+                      <li class="animate tossing" id="about"><a href="#section-about"><span>Sobre</span></a></li>
+                      <li class="animate tossing" id="contact"><a href="#section-contact"><span>Contato</span></a></li>
                   </ul>
               </nav>
           </div>  
@@ -54,24 +54,25 @@
               <h2 class="title"></h2>
               <ul>
                   <li>
-                      <a href="#" class="portfolio">Portfolio</a>
+                      <a href="#section-portfolio" class="portfolio">Portfolio</a>
                   </li>
                   <li>
-                      <a href="#" class="music-and-theater">Música e Teatro</a>
+                      <a href="#section-musicandtheater" class="music-and-theater">Música e Teatro</a>
                   </li>
                   <li>
-                      <a href="#" class="blog">Blog</a>
+                      <a href="#section-blog" class="blog">Blog</a>
                   </li>
                   <li>
-                      <a href="#" class="about">Sobre</a>
+                      <a href="#section-about" class="about">Sobre</a>
                   </li>
                   <li>
-                      <a href="#" class="contact">Contato</a>
+                      <a href="#section-contact" class="contact">Contato</a>
                   </li>
               </ul>
           </div>
       </nav>
       <section id="portfolio">
+        <a name="section-portfolio"></a>
           <div class="wrapper">
               <h2 class="title">PORTFOLIO</h2>
               <ul class="grid da-thumbs">
@@ -135,6 +136,7 @@
         </div>
       </section>
       <section id="music-and-theater">
+        <a name="section-musicandtheater"></a>
           <div class="wrapper">
               <h2 class="title">MÚSICA E TEATRO</h2>
               <ul class="grid da-thumbs">
@@ -192,7 +194,8 @@
           </div>
       </section>
 
-      <section id="blog">
+      <section id="blog" name="blog">
+        <a name="section-blog"></a>
           <div class="wrapper">
               <h2 class="title">BLOG</h2>
               <ul class="grid da-thumbs">
@@ -250,12 +253,16 @@
           </div>
       </section>
 
-      <section id="about">
+      <section id="about" name="about">
+        <a name="section-about"></a>
           <div class="wrapper">
               <h2 class="title">SOBRE</h2>
-              <article>
-              <h3>Márcia Okida por Márcia Okida</h3>
-              Sou feita de muitos Gogues, Tanakas, Elises e Bethânias.<br>
+              <article id="okida">
+              <h3>Perfil</h3>
+              <p>Designer Gráfico desde 1986. Professora universitária desde 1996. Atualmente é professora dos cursos de Jornalismo e Produção Multimídia, além de ser Coordenadora do curso de Graduação em Produção Multimídia da Unisanta (Santos, SP). Colunista da revista Zupi de design, da Revista Estar Bem e do site Artefatocultural. Possui um grupo de música onde é vocalista: Multiversos; e também um grupo de teatro: Rinocerontes. Como caracteristica principal do meu estilo de trabalho cito o minimalismo gráfico — inspirado pelos designers japoneses Ikko Tanaka e Shigueo Fukuda — e o maravilhoso uso das cores de Van Gogh.</p>
+              <br>
+              <h3>Okida por Márcia</h3>
+              <p>Sou feita de muitos Gogues, Tanakas, Elises e Bethânias.<br>
               Mais uma grande mistura de Bandeira, Pessoa, Quintana e Vinicius.<br>
               Lucinda, Tom e Piazolla.<br>
               Sem esquecer de Chico.<br>
@@ -283,30 +290,31 @@
               De melhorar o mundo<br>
               De fazer um pouco ou pelo menos tentar.<br>
               A Paz.<br>
-              E de continuar a fazer Okidas e de criar Márcias.</article>
+              E de continuar a fazer Okidas e de criar Márcias.</p></article>
               <aside>
                   <div class="photo">
                       <span class="border"></span>
                       <img src="img/okida.png">
                       <ul>
-                          <li><a href="#">PERFIL</a></li>
-                          <li><a href="#">CURRICULO LATTES</a></li>
+                          <li><a href="http://lattes.cnpq.br/2911434293195944">CURRICULO LATTES</a></li>
                           <li><a href="#">NA MÍDIA</a></li>
                       </ul>
                   </div>
               </aside>
           </div>
+          <div class="clearfix"></div>
       </section>
 
-      <section id="contact">
+      <section id="contact" name="contact">
+        <a name="section-contact"></a>
           <div class="wrapper">
               <h2 class="title">CONTATO</h2>
               <form>
-              	<input type="text" value="Nome:">
-                  <input type="text" value="Email:">
-                  <input type="text" value="Telefone:">
-                  <input type="text" value="Assunto:">
-                  <textarea value="Mensagem:"></textarea>
+              	<input type="text" value="Nome:" onblur="if(this.value == '') {this.value = 'Nome:';}" onfocus="if(this.value == 'Nome:') {this.value = '';}">
+                <input type="text" value="Email:" onblur="if(this.value == '') {this.value = 'Email:';}" onfocus="if(this.value == 'Email:') {this.value = '';}">
+                <input type="text" value="Telefone:" onblur="if(this.value == '') {this.value = 'Telefone:';}" onfocus="if(this.value == 'Telefone:') {this.value = '';}">
+                <input type="text" value="Assunto:" onblur="if(this.value == '') {this.value = 'Assunto:';}" onfocus="if(this.value == 'Assunto:') {this.value = '';}">
+                <textarea value="Mensagem:" onblur="if(this.value == '') {this.value = 'Nome:';}" onfocus="if(this.value == 'Nome:') {this.value = '';}"></textarea>
                   <a href="#" class="btn">ENVIAR</a>
               </form>
           </div>

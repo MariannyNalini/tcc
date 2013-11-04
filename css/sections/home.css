@@ -39,15 +39,17 @@ nav.tree ul li#contact a span{ background-color: #54c710; left: 77px; top: 25px;
 #blog a.btn:hover{ background-color: #ffb239; }
 
 #about article{ color: #967f60; font-size: 13px; line-height: 20px; width: 425px; text-align: justify; float: left;}
+#about article#perfil{ display: none; }
 #about article h3{ color: #e50746; }
 #about aside { float: right; margin: 43px 0 0 0; background: url("/img/bg-espiral.png") no-repeat 4px 210px; height: 600px; width: 365px; }
 #about aside .photo{ position: relative; }
 #about aside .photo img{ display: block; }
 #about aside .photo span.border{ top: -43px; left: -48px; position: absolute; background: url("/img/border-photo.png") no-repeat; width: 342px; height: 337px; }
-#about aside .photo li{ margin: 10px 0 0 35px; display: inline-block; }
-#about aside .photo li:first-child{ margin-left: 0; }
-#about aside .photo li a{ font-size: 15px; color: #ee0f57; font-weight: 700; }
-#about aside .photo li a:hover{ color:#fb3d7a }
+#about aside .photo ul{ width: 294px; }
+#about aside .photo ul li{ margin: 10px 0 0 110px; display: inline-block; }
+#about aside .photo ul li:first-child{ margin-left: 0; }
+#about aside .photo ul li a{ font-size: 15px; color: #ee0f57; font-weight: 700; }
+#about aside .photo ul li a:hover{ color:#fb3d7a }
 
 .grid li{ 
   width: 237px; 
