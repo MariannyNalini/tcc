@@ -26,11 +26,23 @@
 .da-thumbs li a div span {
   display: block;
   padding: 10px 0;
-  margin: 40px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
   text-transform: uppercase;
   font-weight: normal;
   color: rgba(255,255,255,0.9);
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
   border-bottom: 1px solid rgba(255,255,255,0.5);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+}
+
+
+#portfolio .da-thumbs li a div{
+  background: rgba(68,167,201,0.7);
+}
+
+#music-and-theater .da-thumbs li a div{
+  background: rgba(136,59,187,0.7);
+}
+
+#blog .da-thumbs li a div{
+  background: rgba(255,157,2,0.7);
 }

@@ -7,7 +7,7 @@ aside{ float: left; margin-left: 22px; width: 220px; }
 aside h2{ text-shadow: none !important; text-align: center; font-size: 25px; margin: 0 0 30px 0; }
 aside input[type=text]{ margin: 0 0 30px 0; width: 209px; padding: 4px; border: solid 1px #a59682; }
 aside ul li{ margin: 0 5px 25px 0; display: block;  }
-aside li a{ font-weight: 300; padding: 5px; display: block; color: #a59682; }
+aside li a{ font-weight: 500; padding: 5px; display: block; color: #a59682; }
 
 .portfolio aside ul li a{ border-bottom: solid 1px #1591bb; }
 .portfolio aside ul li a:hover{ background-color: #44a7c9; color: #FFF; }
@@ -19,7 +19,20 @@ aside li a{ font-weight: 300; padding: 5px; display: block; color: #a59682; }
 .blog aside ul li a{ border-bottom: solid 1px #ff8d02; }
 .blog aside ul li a:hover, .blog aside ul li a:active{ background-color: #ff8d02; color: #FFF; }
 
+.post{ padding: 0 0 20px 0; color: #786f62; }
 .post li .post-image{ width: 718px; height: 200px; overflow: hidden; margin: 20px 0;}
-.post li h2{ text-shadow: none !important; color: #a59682 !important; margin-bottom: 10px; font-size: 20px; }
+.post li h2{ text-shadow: none !important; margin-bottom: 10px; font-size: 20px; }
+.post li h3{ color: #786f62; font-size: 11px; }
 .post li p{ text-align: justify; margin-bottom: 20px; }
-.post li hr{ margin-top: 20px; }
+.post li hr{ margin-top: 20px; color: #ff9d02; }
+
+.categories li{ display: inline; font-size: 11px; }
+
+#blog .post{ border-bottom: solid 1px #ff9d02; }
+#blog .categories li a{ color: #ff9d02; }
+#blog .categories li a:hover{ color: #ffc66c; }
+
+#music-and-theater .post{ border-bottom: solid 1px #883bbb; }
+#music-and-theater .categories li a{ color: #883bbb; }
+#music-and-theater .categories li a:hover{ color: #a15fcd; }
+
