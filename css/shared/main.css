@@ -16,14 +16,14 @@ a.btn{
   font-size: 15px;
 }
 
-nav.interna{ background-color: #dfd0bb; -webkit-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); -moz-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); }
+nav.interna{ background-color: #dfd0bb; border-top: solid 2px #fffcf4; border-bottom: solid 2px #fffcf4; -webkit-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); -moz-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); }
 nav.interna.fixed{ position:fixed; top:0; left:0; width:100%; z-index:9; }
 nav.interna h2{ float: left; background: url("../../img/logo-menu.png") no-repeat; width: 30px; height: 32px; margin: 10px 0 0 5px; padding: 0;}
 nav.interna ul { text-align: center; }
 nav.interna ul li{ display: inline-block; margin: 0 auto; padding: 17px 40px 13px 40px; text-transform: uppercase;}
 nav.interna ul li:first-child{ padding-left: 0;}
 nav.interna ul li a{ transition: 0.3s ease; font-weight: 500; font-size: 14px; color: #a59682;  }
-nav.interna ul li a:hover { padding: 11px 0; border-top: solid 1px; border-bottom: solid 1px; }
+nav.interna ul li a:hover { padding: 11px 0; border-top: solid 2px; border-bottom: solid 2px;}
 
 nav.interna ul li a.portfolio:hover{ border-color: #44a7c9; color: #44a7c9; }
 nav.interna ul li a.music-and-theater:hover{ border-color: #883bbb; color: #883bbb; }
@@ -37,9 +37,7 @@ nav.interna ul li a.contact:hover{ border-color: #54c710; color: #54c710;}
 #about h2{ color: #e50746; text-shadow: 2px 2px 0px #b80135; }
 #contact h2{ color: #54c710; text-shadow: 2px 2px 0px #497400; }
 
-
 #footer{ background-color: #dfd0bb; padding: 20px 0; height:auto;}
 #footer h2{ background: url("../../img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0;}
-
 
 
