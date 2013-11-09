@@ -31,13 +31,17 @@ nav.interna ul li a.blog:hover{ border-color: #ff9d02; color: #ff9d02;}
 nav.interna ul li a.about:hover{ border-color: #e50746; color: #e50746; }
 nav.interna ul li a.contact:hover{ border-color: #54c710; color: #54c710;}
 
-#portfolio h2{ color: #44a7c9; text-shadow: 2px 2px 0px #1790b3; }
+#portfolio h2{ color: #44a7c9; text-shadow: 2px 2px 0px #1790b3; line-height: 100px; padding: 100px 0 50px 0; }
 #music-and-theater h2{ color: #883bbb; text-shadow: 2px 2px 0px #622c7b; }
 #blog h2{ color: #ff9d02; text-shadow: 2px 2px 0px #d18000; }
 #about h2{ color: #e50746; text-shadow: 2px 2px 0px #b80135; }
 #contact h2{ color: #54c710; text-shadow: 2px 2px 0px #497400; }
 
+#portfolio .grid li{ border: solid 5px #1591bb; }
+#music-and-theater .grid li{ border: solid 5px #622c7b; }
+#blog .grid li{ border: solid 5px #d18000; }
+
 #footer{ background-color: #dfd0bb; padding: 20px 0; height:auto;}
-#footer h2{ background: url("../../img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0;}
+#footer h2{ background: url("../../img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0; text-indent: -9999px;}
 
 

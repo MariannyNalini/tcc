@@ -2,7 +2,7 @@ section{ padding: 10px 0; }
 section h2{ line-height: 200px;}
 section#portfolio { background: url("../../img/bg_portfolio.png") no-repeat center; }
 section#phrase{ background: url("../../img/bg_frase.jpg") no-repeat center #ff4445; }
-section#music-and-theater{ background: url("../../img/bg_musica.png") no-repeat center; }
+section#music-and-theater{ background: url("../../img/bg_musica.png") no-repeat center; min-height: 700px; }
 section#blog{ background: url("../../img/bg_blog.png") no-repeat center; }
 section#contact{ background: url("../../img/bg_contato.jpg") no-repeat left; }
 
@@ -30,9 +30,9 @@ nav.tree ul li#contact a span{ background-color: #54c710; left: 77px; top: 25px;
 section#portfolio a.btn{ background-color: #44a7c9; text-shadow: 2px 2px 0px #2d6e84; -webkit-box-shadow: 3px 3px 0px #1790b3; -moz-box-shadow: 3px 3px 0px #1790b3; box-shadow: 3px 3px 0px #1790b3; }
 section#portfolio a.btn:hover{ background-color: #4bb9df; }
 
-#phrase{ color: #FFF; font-family: 'Oswald', sans-serif; font-weight: 300; padding: 20px 0;}
+#phrase{ color: #FFF; font-family: 'Oswald', sans-serif; font-weight: 300; padding: 60px 0;}
 #phrase p{ font-size: 37px; text-align: right; line-height: 55px; }
-#phrase h2{ font-size: 30px; text-align: right; line-height: 0; margin-top: 40px;}
+#phrase h2{ font-size: 30px; text-align: right; line-height: 1; margin-top: 40px;}
 
 section#music-and-theater a.btn{ background-color: #883bbb; text-shadow: 2px 2px 0px #45096d; -webkit-box-shadow: 3px 3px 0px #622c7b; -moz-box-shadow: 3px 3px 0px #622c7b; box-shadow: 3px 3px 0px #622c7b; }
 section#music-and-theater a.btn:hover{ background-color: #9946d0; }
@@ -57,7 +57,7 @@ section#about aside .photo ul li a:hover{ color:#fb3d7a }
 .grid li{ 
   width: 237px; 
   height: 237px; 
-  margin: 0 25px 50px 25px; 
+  margin: 0 0 50px 50px; 
   background-color: #DFD0BB; 
   float:left; 
   overflow: hidden;
@@ -101,13 +101,17 @@ form a:hover{
 
 ::-webkit-input-placeholder { /* WebKit browsers */
   color: #54b819;
+  font-family: Arial;
 }
 :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
   color: #54b819;
+  font-family: Arial;
 }
 ::-moz-placeholder { /* Mozilla Firefox 19+ */
   color: #54b819;
+  font-family: Arial;
 }
 :-ms-input-placeholder { /* Internet Explorer 10+ */
   color: #54b819;
+  font-family: Arial;
 }
