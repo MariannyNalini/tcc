@@ -1,30 +1,23 @@
 body{ font-family: 'Armata', sans-serif; background-color: #fffcf4; font-size: 12px; line-height: 20px }
 section, header { position: relative; clear: both; }
 h2 { font-family: 'Oswald', sans-serif; }
-h2.title{ font-size: 50px; text-align: center; font-weight: 700; }
 a{ font-family: 'Oswald'; text-decoration: none; }
 input[type=text], textarea{ background-color: #fffcf4; }
 
 .wrapper{ margin: 0 auto; width: 960px; position:relative; }
 .clearfix{ clear: both; }
-a.btn{ 
-  padding: 8px 15px; 
-  margin: 15px auto; 
-  display: table; 
-  color: #FFF; 
-  font-weight: 500;
-  font-size: 15px;
-}
+
+h2.title{ font-size: 50px; text-align: center; font-weight: 700; }
+a.btn{  padding: 8px 15px; margin: 15px auto; display: table; color: #FFF; font-weight: 500; font-size: 15px; }
 
 nav.interna{ background-color: #dfd0bb; border-top: solid 2px #fffcf4; border-bottom: solid 2px #fffcf4; -webkit-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); -moz-box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); box-shadow: 0px 3px 8px rgba(50, 50, 50, 0.39); }
 nav.interna.fixed{ position:fixed; top:0; left:0; width:100%; z-index:9; }
-nav.interna h2{ float: left; background: url("../../img/logo-menu.png") no-repeat; width: 30px; height: 32px; margin: 10px 0 0 5px; padding: 0;}
+nav.interna h2{ float: left; background: url("../../img/logo-menu.png") no-repeat; width: 30px; height: 32px; margin: 10px 0 0 30px; padding: 0;}
 nav.interna ul { text-align: center; }
 nav.interna ul li{ display: inline-block; margin: 0 auto; padding: 17px 40px 13px 40px; text-transform: uppercase;}
 nav.interna ul li:first-child{ padding-left: 0;}
 nav.interna ul li a{ transition: 0.3s ease; font-weight: 500; font-size: 14px; color: #a59682;  }
 nav.interna ul li a:hover { padding: 11px 0; border-top: solid 2px; border-bottom: solid 2px;}
-
 nav.interna ul li a.portfolio:hover{ border-color: #44a7c9; color: #44a7c9; }
 nav.interna ul li a.music-and-theater:hover{ border-color: #883bbb; color: #883bbb; }
 nav.interna ul li a.blog:hover{ border-color: #ff9d02; color: #ff9d02;}
@@ -42,6 +35,6 @@ nav.interna ul li a.contact:hover{ border-color: #54c710; color: #54c710;}
 #blog .grid li{ border: solid 5px #d18000; }
 
 #footer{ background-color: #dfd0bb; padding: 20px 0; height:auto;}
-#footer h2{ background: url("../../img/logo-footer.png") no-repeat; width: 555px ; height: 88px; margin: 0; padding: 0; text-indent: -9999px;}
+#footer h2{ background: url("../../img/logo-footer.png") no-repeat; width: 260px ; height: 42px; margin: 0; padding: 0; text-indent: -9999px;}
 
 

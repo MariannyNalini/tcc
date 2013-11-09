@@ -12,23 +12,35 @@ aside input[type=text]{ margin: 0 0 30px 0; width: 209px; padding: 4px; border: 
 aside ul li{ margin: 0 5px 25px 0; display: block;  }
 aside li a{ font-weight: 500; padding: 5px; display: block; color: #a59682; }
 
-#portfolio h2{ padding: 50px 0 40px 0; }
-#portfolio h2.post-title{ line-height: 1; padding: 0; }
-#portfolio aside h2{ line-height: 1; padding: 0; }
-#portfolio aside ul li a{ border-bottom: solid 1px #1591bb; }
-#portfolio aside ul li a:hover,
-#portfolio aside ul li a:active,
-#portfolio aside ul li a.active{ background-color: #44a7c9; color: #FFF; }
+section#portfolio{ background: url("../../img/bg_portfolio2.jpg") fixed center center; }
+section#portfolio h2{ padding: 50px 0 40px 0; }
+section#portfolio h2.post-title{ line-height: 1; padding: 0; }
+section#portfolio aside h2{ line-height: 1; padding: 0; }
+section#portfolio aside ul li a{ border-bottom: solid 1px #1591bb; }
+section#portfolio aside ul li a:hover,
+section#portfolio aside ul li a:active,
+section#portfolio aside ul li a.active{ background-color: #44a7c9; color: #FFF; }
+section#portfolio .post{ border-bottom: none; }
+section#portfolio .categories li a{ color: #44a7c9; }
+section#portfolio .categories li a:hover{ color: #6fbad4; }
 
-#music-and-theater aside ul li a{ border-bottom: solid 1px #883bbb; }
-#music-and-theater aside ul li a:hover, 
-#music-and-theater aside ul li a:active, 
-#music-and-theater aside ul li a.active{ background-color: #883bbb; color: #FFF; }
+section#music-and-theater{ background: url("../../img/bg_musica2.jpg") fixed center center; }
+section#music-and-theater aside ul li a{ border-bottom: solid 1px #883bbb; }
+section#music-and-theater aside ul li a:hover, 
+section#music-and-theater aside ul li a:active, 
+section#music-and-theater aside ul li a.active{ background-color: #883bbb; color: #FFF; }
+section#music-and-theater .post{ border-bottom: solid 1px #883bbb; }
+section#music-and-theater .categories li a{ color: #883bbb; }
+section#music-and-theater .categories li a:hover{ color: #a15fcd; }
 
-#blog aside ul li a{ border-bottom: solid 1px #ff8d02; }
-#blog aside ul li a:hover, 
-#blog aside ul li a:active, 
-#blog aside ul li a.active{ background-color: #ff8d02; color: #FFF; }
+section#blog{ background: url("../../img/bg_blog2.jpg") fixed center center; }
+section#blog aside ul li a{ border-bottom: solid 1px #ff8d02; }
+section#blog aside ul li a:hover, 
+section#blog aside ul li a:active, 
+section#blog aside ul li a.active{ background-color: #ff8d02; color: #FFF; }
+section#blog .post{ border-bottom: solid 1px #ff9d02; }
+section#blog .categories li a{ color: #ff9d02; }
+section#blog .categories li a:hover{ color: #ffc66c; }
 
 .post{ padding: 0 0 20px 0; color: #786f62; }
 .post li .post-image{ margin: 20px 0; text-align: center;}
@@ -39,15 +51,3 @@ aside li a{ font-weight: 500; padding: 5px; display: block; color: #a59682; }
 .post li hr{ margin-top: 20px; color: #ff9d02; }
 
 .categories li{ display: inline; font-size: 11px; }
-
-#blog .post{ border-bottom: solid 1px #ff9d02; }
-#blog .categories li a{ color: #ff9d02; }
-#blog .categories li a:hover{ color: #ffc66c; }
-
-#music-and-theater .post{ border-bottom: solid 1px #883bbb; }
-#music-and-theater .categories li a{ color: #883bbb; }
-#music-and-theater .categories li a:hover{ color: #a15fcd; }
-
-#portfolio .post{ border-bottom: none; }
-#portfolio .categories li a{ color: #44a7c9; }
-#portfolio .categories li a:hover{ color: #6fbad4; }
