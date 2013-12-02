@@ -75,14 +75,15 @@ function html5blank_nav()
 		'menu_class'      => 'menu',
 		'menu_id'         => '',
 		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
+		'fallback_cb'     => 'wp_list_categories',
 		'before'          => '',
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
 		'items_wrap'      => '<ul>%3$s</ul>',
 		'depth'           => 0,
-		'walker'          => ''
+		'walker'          => '',
+        'title_li'        => ''
 		)
 	);
 }
@@ -124,6 +125,9 @@ function html5blank_styles()
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    wp_register_style('main', get_template_directory_uri() . '/css/shared/main.css', array(), '1.0', 'all');
+    wp_enqueue_style('main'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
