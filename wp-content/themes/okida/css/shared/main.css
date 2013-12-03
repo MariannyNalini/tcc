@@ -4,8 +4,6 @@ h2 { font-family: 'Oswald', sans-serif; }
 a{ font-family: 'Oswald'; text-decoration: none; }
 input[type=text], textarea{ background-color: #fffcf4; }
 
-.sidebar{ float: right; }
-
 .wrapper{ margin: 0 auto; width: 960px; position:relative; }
 .clearfix{ clear: both; }
 

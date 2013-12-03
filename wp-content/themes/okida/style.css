@@ -69,9 +69,6 @@ input:focus {
 	outline:0;
 	border:1px solid #04A4CC;
 }
-li{
-	list-style: none;
-}
 
 /*------------------------------------*\
     STRUCTURE
@@ -101,7 +98,7 @@ li{
 }
 /* sidebar */
 .sidebar {
-	
+
 }
 /* footer */
 .footer {

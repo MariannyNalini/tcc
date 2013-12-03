@@ -4,7 +4,7 @@ h2.title a{ text-indent: -9999px; display: block; }
 ul.post{ width: 650px; float: left; margin: 0 20px 0 0;}
 ul.post li{ width: 650px; margin: 0 0 20px 0; }
 
-section{ width: 718px; float: left; }
+ul.grid{ width: 718px; float: left; }
 ul.grid li{ margin: 0 40px 40px 62px;  }
 aside{ float: left; margin-left: 22px; width: 220px; }
 aside h2{ text-shadow: none !important; text-align: center; font-size: 25px; margin: 0 0 30px 0; }

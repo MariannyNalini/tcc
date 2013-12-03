@@ -9,9 +9,11 @@
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png" rel="apple-touch-icon-precomposed">
     
     
-    <?php if(is_category('Portfolio')) :?>
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/sections/interna.css" media="screen" />
-    <?php endif;?>
+    <?php
+        if ( is_home() ) { ?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/plugins/animations.css" media="screen" />
+    <?}?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/sections/home.css" media="screen" />
 		
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -31,25 +33,101 @@
 	<body <?php body_class(); ?>>
 
 		<!-- wrapper -->
-		<div class="wrapper">
-
+		
 			<!-- header -->
 			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
+      
+      <?php
+        if ( is_home() ) { ?>
+      <span class="tree-cont"></span>
+        <nav class="tree">
+          <ul>
+            <li class="animate tossing" id="portfolio">
+              <a href="#section-portfolio">
+                <span>Portfolio</span>
+              </a>
+            </li>
+            <li class="animate tossing" id="music-and-theater">
+              <a href="#section-musicandtheater" class="menu_button">
+                <span>Música e Teatro</span>
+              </a>
+            </li>
+            <li class="animate tossing" id="blog">
+              <a href="#section-blog" class="menu_button">
+                <span>Blog</span>
+              </a>
+            </li>
+            <li class="animate tossing" id="about">
+              <a href="#section-about" class="menu_button">
+                <span>Sobre</span>
+              </a>
+            </li>
+            <li class="animate tossing" id="contact">
+              <a href="#section-contact" class="menu_button">
+                <span>Contato</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="social">
+          <li>
+            <a href="http://www.pinterest.com/marciaokida/" class="pinterest" target="_blank">Pinterest</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/marciaokida" class="facebook" target="_blank">Facebook</a>
+          </li>
+          <li class="twitter">
+            <a href="https://twitter.com/marciaokida" class="twitter" target="_blank">Twitter</a>
+          </li>
+        </ul>
+      </div>  
+    </header>
+    <nav class="interna">
+      <div class="wrapper">
+        <h2 class="title"></h2>
+        <ul>
+          <li>
+            <a href="#section-portfolio" class="portfolio menu_button">Portfolio</a>
+          </li>
+          <li>
+            <a href="#section-musicandtheater" class="music-and-theater menu_button">Música e Teatro</a>
+          </li>
+          <li>
+            <a href="#section-blog" class="blog menu_button">Blog</a>
+          </li>
+          <li>
+            <a href="#section-about" class="about menu_button">Sobre</a>
+          </li>
+          <li>
+            <a href="#section-contact" class="contact menu_button">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <?} else {?>
+      <nav class="interna">
+      <div class="wrapper">
+        <h2 class="title"></h2>
+        <ul>
+          <li>
+            <a href="#section-portfolio" class="portfolio menu_button">Portfolio</a>
+          </li>
+          <li>
+            <a href="#section-musicandtheater" class="music-and-theater menu_button">Música e Teatro</a>
+          </li>
+          <li>
+            <a href="#section-blog" class="blog menu_button">Blog</a>
+          </li>
+          <li>
+            <a href="#section-about" class="about menu_button">Sobre</a>
+          </li>
+          <li>
+            <a href="#section-contact" class="contact menu_button">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <?}?>
 
 			</header>
 			<!-- /header -->
