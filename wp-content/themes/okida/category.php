@@ -2,13 +2,13 @@
 	
 	<!-- section -->
 	<section role="main">
-	
-		<h1><?php the_category(); ?></h1>
-	
-		<?php get_template_part('loop'); ?>
+		<div class="wrapper">
+			<h1><?php the_category(); ?></h1>
 		
-		<?php get_template_part('pagination'); ?>
-	
+			<?php get_template_part('loop'); ?>
+			
+			<?php get_template_part('pagination'); ?>
+		</div>
 	</section>
 	<!-- /section -->
 	
