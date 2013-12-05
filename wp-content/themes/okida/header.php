@@ -24,17 +24,21 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
+    <!-- wrapper -->
 		
-			<!-- header -->
-			<header class="header clear" role="banner">
-      
+	<!-- header -->
+	<header class="header clear" role="banner">
       <?php
+        
+        $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        $eh_sobre = strpos($actual_link ,"sobre");
+        
+       
         if ( is_home() ) { 
           require 'header-tree.php';
-        }else {
+        }else if ($eh_sobre == 0) {
           require 'nav.php';
         }
       ?>
-			</header>
-			<!-- /header -->
+	</header>
+	<!-- /header -->
