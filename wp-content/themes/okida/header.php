@@ -13,8 +13,9 @@
         if ( is_home() ) { ?>
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/plugins/animations.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/sections/home.css" media="screen" />
-    <?}?>
-		
+    <?} else{?>
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/sections/interna.css" media="screen" />
+		<?}?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
