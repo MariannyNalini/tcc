@@ -1,0 +1,53 @@
+h2.title{ line-height: 200px; }
+h2.title a{ text-indent: -9999px; display: block; }
+
+ul.post{ width: 650px; float: left; margin: 0 20px 0 0;}
+ul.post li{ width: 650px; margin: 0 0 20px 0; }
+
+ul.grid{ width: 718px; float: left; }
+ul.grid li{ margin: 0 40px 40px 62px;  }
+aside{ float: left; margin-left: 22px; width: 220px; }
+aside h2{ text-shadow: none !important; text-align: center; font-size: 25px; margin: 0 0 30px 0; }
+aside input[type=text]{ margin: 0 0 30px 0; width: 209px; padding: 4px; border: solid 1px #a59682; }
+aside ul li{ margin: 0 5px 25px 0; display: block;  }
+aside li a{ font-weight: 500; padding: 5px; display: block; color: #a59682; }
+
+section#portfolio{ background: url("../../img/bg_portfolio2.jpg") fixed center center; }
+section#portfolio h2{ padding: 50px 0 40px 0; }
+section#portfolio h2.post-title{ line-height: 1; padding: 0; }
+section#portfolio aside h2{ line-height: 1; padding: 0; }
+section#portfolio aside ul li a{ border-bottom: solid 1px #1591bb; }
+section#portfolio aside ul li a:hover,
+section#portfolio aside ul li a:active,
+section#portfolio aside ul li a.active{ background-color: #44a7c9; color: #FFF; }
+section#portfolio .post{ border-bottom: none; }
+section#portfolio .categories li a{ color: #44a7c9; }
+section#portfolio .categories li a:hover{ color: #6fbad4; }
+
+section#music-and-theater{ background: url("../../img/bg_musica2.jpg") fixed center center; }
+section#music-and-theater aside ul li a{ border-bottom: solid 1px #883bbb; }
+section#music-and-theater aside ul li a:hover, 
+section#music-and-theater aside ul li a:active, 
+section#music-and-theater aside ul li a.active{ background-color: #883bbb; color: #FFF; }
+section#music-and-theater .post{ border-bottom: solid 1px #883bbb; }
+section#music-and-theater .categories li a{ color: #883bbb; }
+section#music-and-theater .categories li a:hover{ color: #a15fcd; }
+
+section#blog{ background: url("../../img/bg_blog2.jpg") fixed center center; }
+section#blog aside ul li a{ border-bottom: solid 1px #ff8d02; }
+section#blog aside ul li a:hover, 
+section#blog aside ul li a:active, 
+section#blog aside ul li a.active{ background-color: #ff8d02; color: #FFF; }
+section#blog .post{ border-bottom: solid 1px #ff9d02; }
+section#blog .categories li a{ color: #ff9d02; }
+section#blog .categories li a:hover{ color: #ffc66c; }
+
+.post{ padding: 20px; color: #786f62; background-color:rgba(255,252,244,0.9);}
+.post li .post-image{ margin: 20px 0; text-align: center;}
+.post li img{ max-width: 625px; height: auto; }
+.post li h2{ text-shadow: none !important; margin-bottom: 10px; font-size: 20px; }
+.post li h3{ color: #786f62; font-size: 11px; }
+.post li p{ text-align: justify; }
+.post li hr{ margin-top: 20px; color: #ff9d02; }
+
+.categories li{ display: inline; font-size: 11px; }
