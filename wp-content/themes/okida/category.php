@@ -1,17 +1,10 @@
-<?php get_header(); ?>
-	
-	<!-- section -->
-	<section role="main">
-		<div class="wrapper">
-			<h1><?php the_category(); ?></h1>
-		
-			<?php get_template_part('loop'); ?>
-			
-			<?php get_template_part('pagination'); ?>
-		</div>
-	</section>
-	<!-- /section -->
-	
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+<?php if (is_category( 'portfolio' )) { 
+		require 'category-portfolio.php'
+	} else if (is_category( 'musica-e-teatro')){ 
+		require 'category-musicateatro.php'
+	else if (is_category('blog')){
+		require 'category-blog.php'
+	} else{
+		require 'category.php'
+	}
+?>
