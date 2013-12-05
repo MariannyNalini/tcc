@@ -24,7 +24,7 @@
             }
             else {?>
               <img src="<?php bloginfo('template_directory'); ?>/img/thumb.jpg">
-            <?}?>
+            <?}
           ?>
           <div>
             <span><?php the_title(); ?></span>
