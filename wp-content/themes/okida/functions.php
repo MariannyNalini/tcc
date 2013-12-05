@@ -29,7 +29,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('post-thumbnails');
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
-    add_image_size('small', 120, '', true); // Small Thumbnail
+    add_image_size('small', 327, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
@@ -100,6 +100,9 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/vendors/modernizr.custom.97074.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('modernizr'); // Enqueue it!
 
+        wp_register_script('hoverdir', get_template_directory_uri() . '/js/plugins/jquery.hoverdir.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('hoverdir'); // Enqueue it!
+
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
 
@@ -131,6 +134,9 @@ function html5blank_styles()
 
     wp_register_style('main', get_template_directory_uri() . '/css/shared/main.css', array(), '1.0', 'all');
     wp_enqueue_style('main'); // Enqueue it!
+
+    wp_register_style('hover', get_template_directory_uri() . '/css/plugins/hover.css', array(), '1.0', 'all');
+    wp_enqueue_style('hover'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
