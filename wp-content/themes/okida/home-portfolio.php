@@ -27,7 +27,7 @@
             <?}
           ?>
           <div>
-            <span><?php the_title(); ?></span>
+            <span><?php echo(limit_words(get_the_title(),4)); ?>  </span>
           </div>      
           </a>
         </li>
@@ -41,6 +41,7 @@
   <?php endif; ?>
 
   <?php $wp_query = null; $wp_query = $temp;?>
-  <div class="clear"></div>
+  <div class="clearfix"></div>
+  <a href="category/portfolio" class="btn">VER TODOS</a>
 </div>
 </section>

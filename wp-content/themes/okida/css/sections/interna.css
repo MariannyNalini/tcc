@@ -8,6 +8,7 @@ h2.title a{ text-indent: -9999px; display: block; }
 article.post{ width: 650px; float: left; margin: 0 20px 0 0;}
 
 .tagcloud { margin-bottom: 30px; }
+.navigation { width: 718px; }
 
 ul.grid{ width: 718px; float: left; }
 ul.grid li{ margin: 0 40px 40px 62px; width: 237px; height: 237px; float:left; overflow: hidden; position: relative; }

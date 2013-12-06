@@ -18,7 +18,7 @@
 		}
 		/* se não for nenhuma das categorias acima */
 		else { ?>
-		<? include (TEMPLATEPATH.'/single-default.php'); ?>
+		<? include (TEMPLATEPATH.'/single-blog.php'); ?>
 	<?php } ?>
 	
 >

@@ -77,15 +77,15 @@ section#contact ul.social li a{ width: 31px; height: 30px; background-repeat: no
 section#contact ul.social li a.pinterest{ background: url("../../img/ico-pinterest2.png"); }
 section#contact ul.social li a.facebook{ background: url("../../img/ico-facebook2.png") }
 section#contact ul.social li a.twitter{ background: url("../../img/ico-twitter2.png") }
-section#contact form{ width: 570px;	margin: 0 auto; }
+section#contact form{ width: 570px;	margin: 0 auto 80px auto; }
 section#contact form input[type=text],
 section#contact form input[type=email]{ margin-bottom: 20px; }
 section#contact form input[type=text], 
 form textarea,
 section#contact form input[type=email]{ width: 558px;	border: solid 1px #54b819; padding: 5px; color: #54b819; }
 section#contact form textarea{ height: 100px; }
-section#contact .wrapper a{ background-color: #54c710; border: 0; padding: 5px 10px; float: right; text-shadow: 2px 2px 0px #497400; -webkit-box-shadow: 3px 3px 0px #497400; -moz-box-shadow: 3px 3px 0px #497400; box-shadow: 3px 3px 0px #497400; }
-section#contact .wrapper a:hover{ background-color: #6cd22f; }
+section#contact form input[type=submit]{ background-color: #54c710; border: 0; padding: 5px 10px; float: right; text-shadow: 2px 2px 0px #497400; color: #FFF; font-family: 'Oswald'; font-size: 16px; -webkit-box-shadow: 3px 3px 0px #497400; -moz-box-shadow: 3px 3px 0px #497400; box-shadow: 3px 3px 0px #497400; }
+section#contact form input[type=submit]:hover{ background-color: #6cd22f; }
 
 section#footer{ padding: 64px 0; }
 

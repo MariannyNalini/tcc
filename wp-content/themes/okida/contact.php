@@ -24,8 +24,6 @@
 
       <?php endwhile; ?>
 
-    </ul>
-
   <?php endif; ?>
 
   <?php $wp_query = null; $wp_query = $temp;?>

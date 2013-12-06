@@ -1,17 +1,19 @@
 <?php get_header(); ?>
-	
+<section id="blog">
+	<div class="wrapper">
+		<h2 class="title">Blog</h2>
 	<!-- section -->
 	<section role="main">
+		<ul class="grid da-thumbs">
 	
-		<h1><?php _e( 'Tag Archive: ', 'html5blank' ); echo single_tag_title('', false); ?></h1>
-	
-		<?php get_template_part('loop'); ?>
+		<?php get_template_part('loop-tag'); ?>
 		
 		<?php get_template_part('pagination'); ?>
-	
+		</ul>
 	</section>
 	<!-- /section -->
-	
-<?php get_sidebar(); ?>
 
+<?php get_sidebar(); ?>
+</div>
+</section>
 <?php get_footer(); ?>

@@ -1,49 +1,29 @@
-<?php get_header();?>
+<?php get_header(); ?>
 <section id="music-and-theater">
   <div class="wrapper">
-  <h2 class="title">Música e Teatro</h2>
+    <h2 class="title">Música e Teatro</h2>
 
-  <?php if (have_posts()): ?>
+  <div id="primary" class="content-area">
+    <div id="content" class="site-content" role="main">
+      <ul class="grid da-thumbs">
+    <?php if ( have_posts() ) : ?>
+      <!-- .archive-header -->
 
-    <?php
-      $temp = $wp_query;
-      $wp_query= null;
-      $wp_query = new WP_Query();
-      $wp_query->query('&category_name=musica-e-teatro');
-    ?>
-
-    <ul class="grid da-thumbs">
-
-      <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-
-        <li id="post-<?php the_ID(); ?>">
-          <a href="<?php the_permalink() ?>" rel="bookmark">
-          <?php
-            if ( has_post_thumbnail() ) {
-              the_post_thumbnail();
-            }
-            else {?>
-              <img src="<?php bloginfo('template_directory'); ?>/img/thumb.jpg">
-            <?}
-          ?>
-          <div>
-            <span><?php the_title(); ?></span>
-          </div>      
-          </a>
-        </li>
-
-        <?php comments_template(); // Get wp-comments.php template ?>
-
+      <?php /* The loop */ ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', get_post_format() ); ?>
       <?php endwhile; ?>
 
-    </ul>
 
-  <?php endif; ?>
+    <?php else : ?>
+      <?php get_template_part( 'content', 'none' ); ?>
+    <?php endif; ?>
+  </ul>
+    </div><!-- #content -->
+  </div><!-- #primary -->
 
-  <?php $wp_query = null; $wp_query = $temp;?>
-  <?php get_sidebar();?>
-  <div class="clear"></div>
+<?php get_sidebar(); ?>
 </div>
+<div class="clearfix"></div>
 </section>
-
-<?php get_footer();?>
+<?php get_footer(); ?>

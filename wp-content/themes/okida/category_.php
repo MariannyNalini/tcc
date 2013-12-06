@@ -1,7 +1,31 @@
-<section id="music-and-theater">
-  <a name="section-musicandtheater"></a>
+<?php get_header();?>
+<?
+    $id = get_query_var('cat');
+    $title = single_cat_title( '', false );
+    $cat_name = get_category(get_query_var('cat'))->name;
+    echo $cat_name;
+    
+    if ($id==7 || $id==8 || $id==3)
+    {
+        $idsection ="music-and-theater";
+    }
+    
+    if ($id==2 || $id==9 || $id==10 || $id==11 || $id==12 || $id==13)
+    {
+        $idsection ="portfolio";
+    }
+    
+    if ($id==5)
+    {
+        $idsection ="blog";
+    }
+
+
+    
+?>
+<section id="<?=$idsection;?>">
   <div class="wrapper">
-  <h2 class="title">Música e Teatro</h2>
+  <h2 class="title"><?=$title;?></h2>
 
   <?php if (have_posts()): ?>
 
@@ -9,7 +33,7 @@
       $temp = $wp_query;
       $wp_query= null;
       $wp_query = new WP_Query();
-      $wp_query->query('showposts=6'.'&paged='.$paged.'&category_name=musica-e-teatro');
+      $wp_query->query("&cat=" .$id);
     ?>
 
     <ul class="grid da-thumbs">
@@ -41,7 +65,9 @@
   <?php endif; ?>
 
   <?php $wp_query = null; $wp_query = $temp;?>
-  <div class="clearfix"></div>
-  <a href="category/portfolio" class="btn">VER TODOS</a>
+  <?php get_sidebar();?>
+  <div class="clear"></div>
 </div>
 </section>
+
+<?php get_footer();?>
