@@ -1,37 +1,54 @@
+<?php get_header();?>
+
 <?
-	$category = get_the_category($_GET['CAT']);
-
-// once you have the category array, the rest of the code will work wherever you want on the page 
-
-//# getting the main category of the page
-$catid=$category[0]->category_parent;
-if($catid==0){
-  $catid=$category[0]->cat_ID;
-}
-
-//# now letz get the children categories of the main category
-$categories = get_categories('child_of='.intval($catid));       
-
-foreach ($categories as $category) {
-    //# check if it is a real parent category with subcategories
-    if ($category->parent ==$catid):
-        echo '<span class="category"><a href="">'.$category->cat_name.'</a></span>';
-        //# here we go, getting the subcategories
-        $subcategories=  get_categories('child_of='.intval($category->cat_ID));
-        foreach ($subcategories as $subcategory) {
-            echo '<span class="subcategory" style="padding-left:12px">';
-            echo '<a href="">'.$subcategory->cat_name.'</a></span>';
-        }
-    endif;
-}?>
-
-<?php if (is_category( 'portfolio' )) { 
-		require 'category-portfolio.php';
-	} else if (is_category( 'musica-e-teatro')){ 
-		require 'category-musicateatro.php';
-	} else if (is_category('blog')){
-		require 'category-blog.php';
-	} else{
-		require 'category.php';
-	}
+    $id = get_query_var('cat');
+    $nome = single_cat_title( '', false );
 ?>
+<section id="portfolio">
+  <div class="wrapper">
+  <h2 class="title"><?=$nome;?></h2>
+
+  <?php if (have_posts()): ?>
+
+    <?php
+      $temp = $wp_query;
+      $wp_query= null;
+      $wp_query = new WP_Query();
+      $wp_query->query('&category_id='.$id);
+    ?>
+
+    <ul class="grid da-thumbs">
+
+      <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+
+        <li id="post-<?php the_ID(); ?>">
+          <a href="<?php the_permalink() ?>" rel="bookmark">
+          <?php
+            if ( has_post_thumbnail() ) {
+              the_post_thumbnail();
+            }
+            else {?>
+              <img src="<?php bloginfo('template_directory'); ?>/img/thumb.jpg">
+            <?}
+          ?>
+          <div>
+            <span><?php the_title(); ?></span>
+          </div>      
+          </a>
+        </li>
+
+        <?php comments_template(); // Get wp-comments.php template ?>
+
+      <?php endwhile; ?>
+
+    </ul>
+
+  <?php endif; ?>
+
+  <?php $wp_query = null; $wp_query = $temp;?>
+  <?php get_sidebar();?>
+  <div class="clear"></div>
+</div>
+</section>
+
+<?php get_footer();?>
