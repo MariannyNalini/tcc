@@ -3,19 +3,19 @@
     <h2 class="title"></h2>
     <ul>
       <li>
-        <a href="#section-portfolio" class="portfolio menu_button">Portfolio</a>
+        <a href="<?php the_permalink(); ?>" class="portfolio menu_button">Portfolio</a>
       </li>
       <li>
-        <a href="#section-musicandtheater" class="music-and-theater menu_button">Música e Teatro</a>
+        <a href="#section-musicandtheater" class="music-and-theater">Música e Teatro</a>
       </li>
       <li>
-        <a href="#section-blog" class="blog menu_button">Blog</a>
+        <a href="#section-blog" class="blog">Blog</a>
       </li>
       <li>
-        <a href="#section-about" class="about menu_button">Sobre</a>
+        <a href="#section-about" class="about">Sobre</a>
       </li>
       <li>
-        <a href="#section-contact" class="contact menu_button">Contato</a>
+        <a href="#section-contact" class="contact">Contato</a>
       </li>
     </ul>
   </div>
