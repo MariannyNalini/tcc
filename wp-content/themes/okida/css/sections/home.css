@@ -54,9 +54,9 @@ section#about aside .photo{ position: relative; }
 section#about aside .photo img{ display: block; }
 section#about aside .photo span.border{ top: -43px; left: -48px; position: absolute; background: url("../../img/border-photo.png") no-repeat; width: 342px; height: 337px; }
 section#about aside .photo ul{ width: 294px; }
-section#about aside .photo ul li{ margin: 10px 0 0 110px; display: inline-block; }
+section#about aside .photo ul li{ margin: 10px 0 0 100px; display: inline-block; }
 section#about aside .photo ul li:first-child{ margin-left: 0; }
-section#about aside .photo ul li a{ font-size: 15px; color: #ee0f57; font-weight: 700; }
+section#about aside .photo ul li a{ font-size: 15px; color: #ee0f57; font-weight: 500; }
 section#about aside .photo ul li a:hover{ color:#fb3d7a }
 
 .grid{ margin: 0 auto; }
