@@ -42,6 +42,6 @@
 
   <?php $wp_query = null; $wp_query = $temp;?>
   <div class="clearfix"></div>
-  <a href="category/portfolio" class="btn">VER TODOS</a>
+  <a href="<?php get_site_url();?>/index.php/category/blog" class="btn">VER TODOS</a>
 </div>
 </section>
