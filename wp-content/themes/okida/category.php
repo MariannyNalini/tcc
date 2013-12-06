@@ -1,14 +1,16 @@
 <?php get_header();?>
 <?
     $id = get_query_var('cat');
-    $nome = single_cat_title( '', false );
+    $title = single_cat_title( '', false );
+    $cat_name = get_category(get_query_var('cat'))->name;
+    echo $cat_name;
     
     if ($id==7 || $id==8 || $id==3)
     {
         $idsection ="music-and-theater";
     }
     
-    if ($id==2)
+    if ($id==2 || $id==9 || $id==10 || $id==11 || $id==12 || $id==13)
     {
         $idsection ="portfolio";
     }
@@ -23,7 +25,7 @@
 ?>
 <section id="<?=$idsection;?>">
   <div class="wrapper">
-  <h2 class="title"><?=$nome;?></h2>
+  <h2 class="title"><?=$title;?></h2>
 
   <?php if (have_posts()): ?>
 
@@ -31,7 +33,7 @@
       $temp = $wp_query;
       $wp_query= null;
       $wp_query = new WP_Query();
-      $wp_query->query('&category_id='.$id);
+      $wp_query->query("&cat=" .$id);
     ?>
 
     <ul class="grid da-thumbs">
