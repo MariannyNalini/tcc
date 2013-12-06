@@ -1,10 +1,27 @@
 <?php get_header();?>
-
 <?
     $id = get_query_var('cat');
     $nome = single_cat_title( '', false );
+    
+    if ($id==7 || $id==8 || $id==3)
+    {
+        $idsection ="music-and-theater";
+    }
+    
+    if ($id==2)
+    {
+        $idsection ="portfolio";
+    }
+    
+    if ($id==5)
+    {
+        $idsection ="blog";
+    }
+
+
+    
 ?>
-<section id="portfolio">
+<section id="<?=$idsection;?>">
   <div class="wrapper">
   <h2 class="title"><?=$nome;?></h2>
 
