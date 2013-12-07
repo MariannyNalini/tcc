@@ -36,7 +36,7 @@
               <a href="http://lattes.cnpq.br/2911434293195944" target="_blank">CURRICULO LATTES</a>
             </li>
             <li>
-              <a href="interna/blog-namidia.html">NA MÍDIA</a>
+              <a href="<?php get_site_url();?>/index.php/tag/na-midia/">NA MÍDIA</a>
             </li>
           </ul>
         </div>

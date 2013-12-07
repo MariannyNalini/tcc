@@ -11,6 +11,9 @@
 		<h2 class="post-title">
 			<?php the_title(); ?>
 		</h2>
+		<h3>
+			Postado em: <?php the_time('j \d\e F \d\e Y') ?>
+		</h3>
 		<p class="categories">
 			<?php _e( 'Categoria: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
 

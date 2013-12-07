@@ -34,9 +34,8 @@ header nav.tree ul li#contact a span{ background-color: #54c710; left: 77px; top
 section#portfolio a.btn{ background-color: #44a7c9; text-shadow: 2px 2px 0px #2d6e84; -webkit-box-shadow: 3px 3px 0px #1790b3; -moz-box-shadow: 3px 3px 0px #1790b3; box-shadow: 3px 3px 0px #1790b3; }
 section#portfolio a.btn:hover{ background-color: #4bb9df; }
 
-#phrase{ color: #FFF; font-family: 'Oswald', sans-serif; font-weight: 300; padding: 60px 0;}
-#phrase p{ font-size: 37px; text-align: right; line-height: 55px; }
-#phrase h2{ font-size: 30px; text-align: right; line-height: 1; margin-top: 40px;}
+#phrase{ color: #FFF; padding: 60px 0; font-family: 'Oswald', sans-serif; font-weight: 300;}
+#phrase p{ font-size: 37px; text-align: right; line-height: 55px; font-family: 'Oswald', sans-serif; font-weight: 300; float: right; width: 700px; }
 
 section#music-and-theater a.btn{ background-color: #883bbb; text-shadow: 2px 2px 0px #45096d; -webkit-box-shadow: 3px 3px 0px #622c7b; -moz-box-shadow: 3px 3px 0px #622c7b; box-shadow: 3px 3px 0px #622c7b; }
 section#music-and-theater a.btn:hover{ background-color: #9946d0; }

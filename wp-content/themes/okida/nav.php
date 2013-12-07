@@ -1,6 +1,6 @@
 <nav class="interna">
   <div class="wrapper">
-    <h2 class="title"></h2>
+    <a href="<?php get_site_url();?>/"><h2 class="title"></h2></a>
     <ul>
       <li>
         <a href="<?php get_site_url();?>/index.php/category/portfolio" class="portfolio">Portfolio</a>

@@ -14,7 +14,7 @@
 	<a href="<?php the_permalink() ?>" rel="bookmark">
           <?php
             if ( has_post_thumbnail() ) {
-              the_post_thumbnail();
+              the_post_thumbnail('small');
             }
             else {?>
               <img src="<?php bloginfo('template_directory'); ?>/img/thumb.jpg">
