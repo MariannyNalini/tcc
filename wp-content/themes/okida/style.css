@@ -48,7 +48,6 @@ body {
     *zoom:1;
 }
 img {
-	max-width:100%;
 	vertical-align:bottom;
 }
 a {
@@ -98,7 +97,8 @@ input:focus {
 }
 /* sidebar */
 .sidebar {
-
+	float: left;
+	width: 242px;
 }
 /* footer */
 .footer {
@@ -309,4 +309,9 @@ a img.aligncenter {
 	h3 {
 		page-break-after:avoid;
 	}
+}
+
+.search-input{
+	width: 242px;
+	margin-bottom: 30px;
 }

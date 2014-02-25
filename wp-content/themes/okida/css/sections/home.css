@@ -34,9 +34,8 @@ header nav.tree ul li#contact a span{ background-color: #54c710; left: 77px; top
 section#portfolio a.btn{ background-color: #44a7c9; text-shadow: 2px 2px 0px #2d6e84; -webkit-box-shadow: 3px 3px 0px #1790b3; -moz-box-shadow: 3px 3px 0px #1790b3; box-shadow: 3px 3px 0px #1790b3; }
 section#portfolio a.btn:hover{ background-color: #4bb9df; }
 
-#phrase{ color: #FFF; font-family: 'Oswald', sans-serif; font-weight: 300; padding: 60px 0;}
-#phrase p{ font-size: 37px; text-align: right; line-height: 55px; }
-#phrase h2{ font-size: 30px; text-align: right; line-height: 1; margin-top: 40px;}
+#phrase{ color: #FFF; padding: 60px 0; font-family: 'Oswald', sans-serif; font-weight: 300;}
+#phrase p{ font-size: 37px; text-align: right; line-height: 55px; font-family: 'Oswald', sans-serif; font-weight: 300; float: right; width: 700px; }
 
 section#music-and-theater a.btn{ background-color: #883bbb; text-shadow: 2px 2px 0px #45096d; -webkit-box-shadow: 3px 3px 0px #622c7b; -moz-box-shadow: 3px 3px 0px #622c7b; box-shadow: 3px 3px 0px #622c7b; }
 section#music-and-theater a.btn:hover{ background-color: #9946d0; }
@@ -54,9 +53,9 @@ section#about aside .photo{ position: relative; }
 section#about aside .photo img{ display: block; }
 section#about aside .photo span.border{ top: -43px; left: -48px; position: absolute; background: url("../../img/border-photo.png") no-repeat; width: 342px; height: 337px; }
 section#about aside .photo ul{ width: 294px; }
-section#about aside .photo ul li{ margin: 10px 0 0 110px; display: inline-block; }
+section#about aside .photo ul li{ margin: 10px 0 0 100px; display: inline-block; }
 section#about aside .photo ul li:first-child{ margin-left: 0; }
-section#about aside .photo ul li a{ font-size: 15px; color: #ee0f57; font-weight: 700; }
+section#about aside .photo ul li a{ font-size: 15px; color: #ee0f57; font-weight: 500; }
 section#about aside .photo ul li a:hover{ color:#fb3d7a }
 
 .grid{ margin: 0 auto; }
@@ -77,12 +76,15 @@ section#contact ul.social li a{ width: 31px; height: 30px; background-repeat: no
 section#contact ul.social li a.pinterest{ background: url("../../img/ico-pinterest2.png"); }
 section#contact ul.social li a.facebook{ background: url("../../img/ico-facebook2.png") }
 section#contact ul.social li a.twitter{ background: url("../../img/ico-twitter2.png") }
-section#contact form{ width: 570px;	margin: 0 auto; }
-section#contact form input[type=text]{ margin-bottom: 20px; }
-section#contact form input[type=text], form textarea{ width: 558px;	border: solid 1px #54b819; padding: 5px; color: #54b819; }
+section#contact form{ width: 570px;	margin: 0 auto 80px auto; }
+section#contact form input[type=text],
+section#contact form input[type=email]{ margin-bottom: 20px; }
+section#contact form input[type=text], 
+form textarea,
+section#contact form input[type=email]{ width: 558px;	border: solid 1px #54b819; padding: 5px; color: #54b819; }
 section#contact form textarea{ height: 100px; }
-section#contact .wrapper a{ background-color: #54c710; border: 0; padding: 5px 10px; float: right; text-shadow: 2px 2px 0px #497400; -webkit-box-shadow: 3px 3px 0px #497400; -moz-box-shadow: 3px 3px 0px #497400; box-shadow: 3px 3px 0px #497400; }
-section#contact .wrapper a:hover{ background-color: #6cd22f; }
+section#contact form input[type=submit]{ background-color: #54c710; border: 0; padding: 5px 10px; float: right; text-shadow: 2px 2px 0px #497400; color: #FFF; font-family: 'Oswald'; font-size: 16px; -webkit-box-shadow: 3px 3px 0px #497400; -moz-box-shadow: 3px 3px 0px #497400; box-shadow: 3px 3px 0px #497400; }
+section#contact form input[type=submit]:hover{ background-color: #6cd22f; }
 
 section#footer{ padding: 64px 0; }
 

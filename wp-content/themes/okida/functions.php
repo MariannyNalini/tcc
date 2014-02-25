@@ -29,9 +29,8 @@ if (function_exists('add_theme_support'))
     add_theme_support('post-thumbnails');
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
-    add_image_size('small', 120, '', true); // Small Thumbnail
+    add_image_size('small', 327, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
@@ -94,14 +93,14 @@ function html5blank_header_scripts()
     if (!is_admin()) {
 
     	wp_deregister_script('jquery'); // Deregister WordPress jQuery
-    	wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '1.9.1'); // Google CDN jQuery
-    	wp_enqueue_script('jquery'); // Enqueue it!
+    	wp_register_script('jquery', get_template_directory_uri() . '/js/vendors/jquery.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('jquery'); // Enqueue it!
 
-    	wp_register_script('conditionizr', 'http://cdnjs.cloudflare.com/ajax/libs/conditionizr.js/4.0.0/conditionizr.js', array(), '4.0.0'); // Conditionizr
-        wp_enqueue_script('conditionizr'); // Enqueue it!
-
-        wp_register_script('modernizr', 'http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', array(), '2.6.2'); // Modernizr
+        wp_register_script('modernizr', get_template_directory_uri() . '/js/vendors/modernizr.custom.97074.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('modernizr'); // Enqueue it!
+
+        wp_register_script('hoverdir', get_template_directory_uri() . '/js/plugins/jquery.hoverdir.js', array(), '1.0.0'); // Custom scripts
+        wp_enqueue_script('hoverdir'); // Enqueue it!
 
         wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array(), '1.0.0'); // Custom scripts
         wp_enqueue_script('html5blankscripts'); // Enqueue it!
@@ -134,6 +133,9 @@ function html5blank_styles()
 
     wp_register_style('main', get_template_directory_uri() . '/css/shared/main.css', array(), '1.0', 'all');
     wp_enqueue_style('main'); // Enqueue it!
+
+    wp_register_style('hover', get_template_directory_uri() . '/css/plugins/hover.css', array(), '1.0', 'all');
+    wp_enqueue_style('hover'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -193,8 +195,8 @@ if (function_exists('register_sidebar'))
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
     ));
 
     // Define Sidebar Widget Area 2
@@ -447,6 +449,12 @@ function create_post_type_html5()
         ) // Add Category and Post Tags support
     ));
 }
+
+function limit_words($string, $word_limit) {  
+       $words = explode(' ', $string, ($word_limit + 1));  
+       if(count($words) > $word_limit) { array_pop($words); array_push($words, "..."); }  
+       return implode(' ', $words);  
+ }  
 
 /*------------------------------------*\
 	ShortCode Functions

@@ -1,17 +1,11 @@
-<?php get_header(); ?>
-	
-	<!-- section -->
-	<section role="main">
-		<div class="wrapper">
-			<h1><?php the_category(); ?></h1>
-		
-			<?php get_template_part('loop'); ?>
-			
-			<?php get_template_part('pagination'); ?>
-		</div>
-	</section>
-	<!-- /section -->
-	
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>
+<?php if (is_category(2) or is_category( get_term_children( 2, 'category' ) )) { 
+        require 'category-portfolio.php';
+    } else if (is_category(5)){
+        require 'category-blog.php';
+    } else if (is_category(3) or is_category(get_term_children(3,'category'))){
+        require 'category-musicateatro.php';
+    }
+    else{
+        require '404.php';
+    }
+?>

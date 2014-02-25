@@ -2,9 +2,11 @@
 
 function Home() {
   var menu = $('nav.interna')
+  var fixed = false;
 
   this.init = function() {
     full_tree_trigger()
+    set_menu_buttons()
   }
 
   function full_tree_trigger(){
@@ -23,6 +25,20 @@ function Home() {
     tree_cont.css({
       width: tree_cont_w,
       left: -(tree_cont_w)
+    })
+  }
+
+  function set_menu_buttons() {
+    $(".menu_button").click(function(e) {
+      e.preventDefault();
+
+      var element = $(e.currentTarget);
+
+      var id = element.attr('href').replace("#", "");
+
+      var anchor = $('a[name='+id+']');
+
+      $(window).scrollTop(anchor.offset().top - ((anchor.offset().top >= menu.offset().top && !fixed) ? menu.outerHeight() : 0));
     })
   }
 }
